@@ -42,12 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // 회원가입 데이터 삽입 쿼리
-    $query = "INSERT INTO member (id, password, name) VALUES ('$id', '$pw', '$name')";
+    $query = "INSERT INTO member (user_id, user_pw, user_name) VALUES ('$id', '$pw', '$name')";
     if (mysqli_query($conn, $query)) {
         // 회원가입 성공 시 review.html로 리다이렉션
         echo "<script>
                 alert('회원가입이 성공적으로 완료되었습니다.');
-                location.href = 'index.html';
+                location.href = 'index.php';
               </script>";
     } else {
         // 오류 처리

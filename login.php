@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <title>로그인</title>
 
   <script type="text/javascript">
@@ -42,10 +42,10 @@
   session_start();
 
 //이미 로그인되어있다면 오류라고 출력
-  if (isset($_SESSION['name'])) {
+  if (isset($_SESSION['user_name'])) {
     echo "<script>
             alert('이미 로그인 하셨습니다.');
-            location.href = 'review.html';
+            location.href = 'review.php';
           </script>";
     exit();
   }

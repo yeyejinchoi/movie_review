@@ -1,7 +1,7 @@
 <?php
-$id = $_POST['id'];
-$pw = trim($_POST['password']);
-$name = $_POST['name'];
+$id = $_POST['user_id'];
+$pw = trim($_POST['user_pw']);
+$name = $_POST['user_name'];
 
 // 데이터 유효성 검사
 if (empty($id) || empty($pw) || empty($name)) {
@@ -18,12 +18,12 @@ if (empty($pw)) {
 }
 
 // 회원가입 데이터 삽입
-$sql = "INSERT INTO member (id, password, name) VALUES ('$id', '$pw', '$name')";
+$sql = "INSERT INTO member (user_id, user_pw, user_name) VALUES ('$id', '$pw', '$name')";
 if (mysqli_query($db_conn, $sql)) {
-    // 회원가입 성공 시 index.html로 리다이렉션
+    // 회원가입 성공 시 index.php로 리다이렉션
     echo "<script>
             alert('회원가입이 성공적으로 완료되었습니다.');
-            location.href = 'index.html';
+            location.href = 'index.php';
           </script>";
 } else {
     // 오류 처리
