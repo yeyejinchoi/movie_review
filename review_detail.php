@@ -5,8 +5,8 @@ include "inc_head.php";
 $review_id = intval($_GET['id']);
 
 // 리뷰 상세 조회 쿼리
-$sql = "SELECT *, 
-               DATE_FORMAT(created_at, '%Y-%m-%d %H:%i') as formatted_date FROM reviews WHERE id = ?";
+$sql = "SELECT * , 
+               DATE_FORMAT(created_at, '%Y-%m-%d %H:%i') as formatted_date FROM reviews WHERE status = 'active' AND id = ?";
 
 $stmt = $db_conn->prepare($sql);
 $stmt->bind_param("i", $review_id);  // 파라미터 바인딩 추가

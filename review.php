@@ -4,7 +4,7 @@
 
   //리뷰 목록 조회
   $sql = "SELECT *,
-    DATE_FORMAT(created_at, '%Y-%m-%d') as formatted_date FROM reviews 
+    DATE_FORMAT(created_at, '%Y-%m-%d') as formatted_date FROM reviews WHERE status = 'active'
     ORDER BY created_at DESC";
 
   $result = $db_conn->query($sql);
