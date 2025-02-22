@@ -1,15 +1,49 @@
-.review-item {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  .review-info {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #666;
+}
+
+/* 검색창 스타일 */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 0.9em;
-  }
+    width: 180px;
+}
+
+.search-form .search-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.search-form .search-button:hover {
+    background-color: #555;
+}
