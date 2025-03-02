@@ -24,9 +24,11 @@
 <img src="image/signup.png" width="50%" height="50%"><img src="image/login.png" width="50%" height="50%">
 
 #### 일반 사용자 모드
-<img src="image/review_list.png" width="50%" height="50%"><img src="image/edit_review.png" width="50%" height="50%"><img src="image/search.png" width="50%" height="50%">
+<img src="image/review_list.png" width="50%" height="50%"><img src="image/review_detail.png" width="50%" height="50%">
 
-<img src="image/create_review.png" width="50%" height="50%"><img src="image/review_detail.png" width="50%" height="50%"> 
+<img src="image/create_review.png" width="50%" height="50%"><img src="image/edit_review.png" width="50%" height="50%">
+
+<img src="image/search.png" width="50%" height="50%">
 
 #### 관리자 모드
 <img src="image/owner.png" width="50%" height="50%"><img src="image/hidden.png" width="50%" height="50%">
