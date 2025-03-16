@@ -1,63 +1,8 @@
-/*
-.review-detail-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-.review-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-.review-title {
-    font-size: 1.5em;
-    color: #333;
-    margin: 0;
-}
-.review-meta {
-    display: flex;
-    align-items: center;
-    color: #666;
-    font-size: 0.9em;
-}
-.review-meta span {
-    margin-right: 10px;
-}
-.review-content {
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-.review-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-.btn {
-    padding: 8px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
-}
-.btn-edit {
-    background-color: #007bff;
-    color: white;
-}
-.btn-delete {
-    background-color: #dc3545;
-    color: white;
-}
-*/
+
 /* 메인 콘텐츠 스타일 */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 25px;
+    margin: 20px;
+    padding: 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -79,12 +24,6 @@ strong {
     color: #555;
 }
 
-hr {
-    border: none;
-    border-top: 15px solid #eee;
-    margin: 30px 30px;
-}
-
 /* 콘텐츠 상자 스타일 */
 /* 리뷰 콘텐츠 상자 스타일 */
 .review-content {
@@ -92,12 +31,12 @@ hr {
     border: 1px solid #b4b4b4;
     border-radius: 5px;
     padding: 20px;
-    margin: 20px 0;
-    min-height: 120px;
+    margin-bottom: 20px;
     line-height: 1.8;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: pre-line;
+    min-height: 450px;
 }
 
 /* 버튼 컨테이너 */
@@ -122,11 +61,11 @@ hr {
 }
 
 .buttons button:nth-child(2) {
-    background-color: #d9534f;
+    background-color: #919191;
 }
 
 .buttons button:nth-child(2):hover {
-    background-color: #c9302c;
+    background-color: #808080;
 }
 
 /* 삭제된 리뷰 표시 */

@@ -46,7 +46,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <p><strong>영화:</strong> <?php echo htmlspecialchars($movie); ?></p>
                 <p><strong>작성자:</strong> <?php echo htmlspecialchars($review_author); ?></p>
                 <p><strong>작성일:</strong> <?php echo $created_at; ?></p>
-                <hr>
+                
             <div class="review-content">
                 <?php echo nl2br(htmlspecialchars($content)); ?>
             </div>

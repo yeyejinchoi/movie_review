@@ -79,15 +79,16 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     padding: 20px;
 }
 
 main h1 {
     font-size: 2.5em;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
+    justify-content: center;
+
 }
 
 .review-item {
