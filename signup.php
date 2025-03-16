@@ -66,26 +66,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="signup.css">
     <title>회원가입</title>
 </head>
 <body>
-    <div id="signup_wrap" class="wrap" style="text-align: center; padding: 20px;">
-        <h1 style="margin-bottom: 20px;">Sign up</h1>
-        <form action="signup.php" method="post" id="signup_form" class="form" style="max-width: 400px; margin: 0 auto; text-align: left;">
-            <label for="name" style="font-weight: bold; margin-top: 10px;">Name</label>
-            <input type="text" name="name" id="name" placeholder="Input Field" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;" value="<?= isset($name) ? $name : '' ?>">
+    <div id="signup_wrap" class="wrap">
+        <h1>Sign up</h1>
+        <form action="signup.php" method="post" id="signup_form" class="form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Input Field" value="<?= isset($name) ? $name : '' ?>">
 
-            <label for="id" style="font-weight: bold; margin-top: 10px;">ID</label>
-            <input type="text" name="id" id="id" placeholder="Input Field" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;" value="<?= isset($id) ? $id : '' ?>">
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" placeholder="Input Field" value="<?= isset($id) ? $id : '' ?>">
 
-            <label for="password" style="font-weight: bold; margin-top: 10px;">비밀번호</label>
-            <input type="password" name="pw" id="password" placeholder="Input Field" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+            <label for="password">비밀번호</label>
+            <input type="password" name="pw" id="password" placeholder="Input Field">
 
-            <label for="password_check" style="font-weight: bold; margin-top: 10px;">비밀번호 확인</label>
-            <input type="password" name="pw_ch" id="password_check" placeholder="Input Field" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+            <label for="password_check">비밀번호 확인</label>
+            <input type="password" name="pw_ch" id="password_check" placeholder="Input Field">
 
-            <button type="submit" style="width: 100%; padding: 15px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">회원가입</button>
+            <button type="submit">회원가입</button>
         </form>
     </div>
 </body>

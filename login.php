@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
   <title>로그인</title>
 
   <script type="text/javascript">
@@ -57,15 +57,15 @@
       <form action="login_proc.php" method="post" name="loginform" id="login_form" class="form" onsubmit="login_check(event)">
 
         <p><input type="text" name="id" id="id" placeholder="ID"></p>
-        <span class="err_id" style="color: red; font-size: 0.9em;"></span>
+        <span class="err_id"></span>
 
         <p><input type="password" name="pw" id="pw" placeholder="Password"></p>
-        <span class="err_pw" style="color: red; font-size: 0.9em;"></span>
+        <span class="err_pw"></span>
 
         <p><input type="submit" value="로그인" class="form_btn"></p>
 
   
-        <p class="pre_btn"><a href="regist.php">회원가입</a></p>
+        <p class="pre_btn"><a href="signup.php">회원가입</a></p>
       </form>
     </div>
   </div>

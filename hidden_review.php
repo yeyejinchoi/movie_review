@@ -17,8 +17,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>숨겨진 리뷰 목록</title>
-    <link rel="stylesheet" href="review_style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rev_style.css">
     <style>
       /* 쓰레기통 아이콘 스타일 */
       .delete-button {
@@ -58,7 +57,7 @@
             </div>
 
             <!-- 삭제 버튼 (쓰레기통 아이콘) -->
-            <form action="trash.php" method="POST" style="display:inline;">
+            <form action="trash.php" method="POST" class="delete-form">
               <input type="hidden" name="review_id" value="<?php echo $review['id']; ?>">
               <button type="submit" class="delete-button" title="삭제">🗑️</button>
             </form>

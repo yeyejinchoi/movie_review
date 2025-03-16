@@ -1,0 +1,159 @@
+/*헤더*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-left {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+    header .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  header .nav-right button {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  header .nav-right button:hover {
+    background-color: #333;
+    color: white;
+  }
+
+/* 검색창 스타일 */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 180px;
+}
+
+.search-form .search-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.search-form .search-button:hover {
+    background-color: #555;
+}
+
+/*메인 리뷰 목록*/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.review-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 리뷰 제목 링크 스타일 */
+.review-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.review-title:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* 리뷰 정보 스타일 */
+.review-info {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+.review-info span {
+    margin-right: 8px;
+}
+
+/* 삭제 폼 스타일 */
+.delete-form {
+    margin-left: auto;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.delete-button:hover {
+    opacity: 1;
+}
+
+/* '등록된 리뷰가 없습니다' 메시지 스타일 */
+p {
+    color: #777;
+    font-style: italic;
+}

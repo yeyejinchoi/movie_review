@@ -23,8 +23,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title><?php echo htmlspecialchars($title); ?></title>
-            <link rel="stylesheet" href="review_style.css">
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="rev_style.css">
+            <link rel="stylesheet" href="rev_det_style.css">
+
             <script>
               function confirmDelete() {
                 if (confirm("이 리뷰를 삭제하시겠습니까?")) {
@@ -46,8 +47,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <p><strong>작성자:</strong> <?php echo htmlspecialchars($review_author); ?></p>
                 <p><strong>작성일:</strong> <?php echo $created_at; ?></p>
                 <hr>
-                <p><?php echo nl2br(htmlspecialchars($content)); ?></p>
-
+            <div class="review-content">
+                <?php echo nl2br(htmlspecialchars($content)); ?>
+            </div>
                 <!-- 삭제된 리뷰 표시 -->
                 <?php if ($status === 'deleted'): ?>
                     <p style="color: red; font-weight: bold;">이 리뷰는 삭제된 상태입니다.</p>

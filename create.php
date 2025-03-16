@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Review</title>
     <link rel="stylesheet" href="create_style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rev_style.css">
 
   </head>
   <body>
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="nav-right">
         <span>Welcome, <?= $_SESSION['user_name'] ?></span>
         <button onclick="location.href='logout.php'">LOG OUT</button>
-        <button onclick="location.href='create.php'">리뷰 작성</button>
+        <button onclick="location.href='review.php'">목록으로</button>
 
       </div>
     </header>
